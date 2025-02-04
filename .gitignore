@@ -2,7 +2,6 @@
 *.pyc
 *.pyo
 pycache/
-db.sqlite3
 .env
 env
 venv/
