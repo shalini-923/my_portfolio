@@ -19,9 +19,11 @@
       "env": {
         "DJANGO_SETTINGS_MODULE": "Myportfolio.settings"
       },
-      "commands": [
-        "./vercel-build.sh"
-      ]
+      
+        "scripts": {
+          "vercel-build": "./vercel-build.sh"
+        }
+      
     }
   }
   
