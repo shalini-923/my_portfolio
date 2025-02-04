@@ -7,7 +7,10 @@
       },
       {
         "src": "vercel-build.sh",
-        "use": "@vercel/static-build"
+        "use": "@vercel/static-build",
+        "config": {
+          "outputDirectory": "staticfiles_build/static"
+        }
       }
     ],
     "routes": [
