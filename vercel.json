@@ -14,16 +14,6 @@
     ],
     "env": {
       "DJANGO_SETTINGS_MODULE": "Myportfolio.settings"
-    },
-    "build": {
-      "env": {
-        "DJANGO_SETTINGS_MODULE": "Myportfolio.settings"
-      },
-      
-        "scripts": {
-          "vercel-build": "./vercel-build.sh"
-        }
-      
     }
   }
   
