@@ -4,6 +4,7 @@
 pycache/
 db.sqlite3
 .env
+env/
 venv/
 myenv/
 staticfiles/
