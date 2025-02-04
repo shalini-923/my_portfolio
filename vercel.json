@@ -11,6 +11,14 @@
       "src": "/(.*)",
       "dest": "/Myportfolio/wsgi.py" 
     }
-  ]
+  ],
+  "build": {
+    "env": {
+      "DJANGO_SETTINGS_MODULE": "Myportfolio.settings"
+    },
+    "commands": [
+      "python manage.py collectstatic --noinput" 
+    ]
+  }
   }
   
