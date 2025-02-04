@@ -2,26 +2,26 @@
     "version": 2,
     "builds": [
       {
-        "src": "Myportfolio/wsgi.py",  
+        "src": "Myportfolio/wsgi.py",
         "use": "@vercel/python"
       }
     ],
     "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/Myportfolio/wsgi.py" 
-    }
-  ],
-  "env": {
-    "DJANGO_SETTINGS_MODULE": "Myportfolio.settings"
-  },
-  "build": {
+      {
+        "src": "/(.*)",
+        "dest": "/Myportfolio/wsgi.py"
+      }
+    ],
     "env": {
       "DJANGO_SETTINGS_MODULE": "Myportfolio.settings"
     },
-    "commands": [
-      "python manage.py collectstatic --noinput"
-    ]
-  }
+    "build": {
+      "env": {
+        "DJANGO_SETTINGS_MODULE": "Myportfolio.settings"
+      },
+      "commands": [
+        "./vercel-build.sh"
+      ]
+    }
   }
   
