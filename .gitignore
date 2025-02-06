@@ -7,7 +7,5 @@ db.sqlite3
 env
 venv/
 myenv/
-staticfiles/
-media/
 migrations/*.py
 .DS_Store
