@@ -1,9 +1,3 @@
-#!/bin/bash
-
-# Ensure that Python is available
-echo "Setting up Python environment..."
-apt-get update
-apt-get install -y python3 python3-pip
 
 # Install dependencies
 echo "Installing dependencies..."
